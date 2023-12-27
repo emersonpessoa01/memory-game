@@ -1,0 +1,29 @@
+:root {
+  --blue-dark: #03001e;
+  --black: #000;
+  --graphite:#262809;
+  --ice: #fdeff9;
+  --purple: #7303c0;
+  --rose: #fc1e8a;
+  --rose-clear: #ec38bc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--rose);
+}
+section {
+  padding: 2rem 7%;
+}

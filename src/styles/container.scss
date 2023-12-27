@@ -1,0 +1,64 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.875rem;
+  background: linear-gradient(
+    325deg,
+    var(--blue-dark) 0%,
+    var(--purple) 30%,
+    var(--rose-clear) 70%,
+    var(--ice) 100%
+  );
+  padding: 40px 60px;
+
+  h2 {
+    font-size: 3rem;
+    color: var(--ice);
+    transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .game {
+    background-color: red;
+    width: 100%;
+    padding-top: 75%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+  }
+  .item{
+    position: relative;
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ice);
+  }
+  .reset {
+    padding: 15px 20px;
+    width: 100%;
+    color: var(--black);
+    background: var(--ice);
+    border: none;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    &:focus {
+      color: var(--rose);
+      background: var(--graphite);
+    }
+  }
+}
