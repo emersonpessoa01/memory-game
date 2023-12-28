@@ -22,27 +22,30 @@
   }
 
   .game {
-    border: 1px solid red;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    gap: 10px;
+    position: relative;
+    background-color: red;
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0.5rem;
+    margin: 2rem auto;
+    margin-bottom: 0;
     transform-style: preserve-3d;
     perspective: 500px;
-    max-width: 350px;
-    .item {
-      position: relative;
-      width: 70px;
-      height: 70px;
+    .item{
+      background-color: var(--blue-dark);
+      border: 1px solid #000;
+      width: 100%;
+      padding-top: 100%;
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      background: #fff;
-      font-size:3rem
+      
+
     }
   }
-
+  
   .reset {
     padding: 15px 20px;
     width: 100%;
