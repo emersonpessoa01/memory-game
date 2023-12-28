@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+
 :root {
   --blue-dark: #03001e;
   --black: #000;
   --graphite:#262809;
+  --gray:#0b151b;
   --ice: #fdeff9;
   --purple: #7303c0;
+  --purple2:#3f2d59;
+  --purple3:#6610f2;
   --rose: #fc1e8a;
   --rose-clear: #ec38bc;
 }
@@ -12,18 +17,42 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
+  font-family: "Poppins","Roboto",'Courier New', Courier, monospace;
 }
 
 html {
   font-size: 62.5%;
 }
+html {
+  /* font-size: 62.5%; */
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+  height: 0.25px;
+}
+html::-webkit-scrollbar-track {
+  /* background: transparent; */
+  background: inset 0 0 5px var(--gray);
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--purple);
+  border-radius: 5rem;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--rose-clear);
+  cursor: pointer !important;
+  border:1px solid var(--gray);
+}
+
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   max-width:100%;
   min-height: 100vh;
-  background: var(--rose);
+  background: var(--gray);
 
 }
 section {
