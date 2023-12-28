@@ -67,12 +67,24 @@
       width: 70px;
       height: 70px;
       display: flex;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       background: #fff;
       font-size: 3rem;
+      transform: rotateY(180deg);
       border-radius: 0.5rem;
+      transition: all 0.3s ease-in-out;
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: var(--ice);
+        transform: rotateY(0deg);
+        transition: all 0.3s ease-in-out;
+        backface-visibility: hidden;
+      }
     }
   }
 

@@ -26,9 +26,9 @@ for (let i = 0; i < emojis.length; i++) {
   box.innerHTML = shuffleEmojis[i];
   document.querySelector(".game").appendChild(box);
 }
-(function reStart() {
-  document.querySelector(".reset").addEventListener("click", (e) => {
-    e.preventDefault();
-    location.reload();
-  });
-})();
+// (function reStart() {
+//   document.querySelector(".reset").addEventListener("click", (e) => {
+//     e.preventDefault();
+//     window.location.reload();
+//   });
+// })();
