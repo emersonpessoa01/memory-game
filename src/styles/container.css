@@ -18,7 +18,7 @@
 }
 
 h2 {
-  font-size: clamp(2em, 3.5vw, 3em);
+  font-size: clamp(1.8em, 3.5vw, 3em);
   color: var(--ice);
   transform: uppercase;
   letter-spacing: 0.1em;
