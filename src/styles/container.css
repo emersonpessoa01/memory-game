@@ -57,7 +57,7 @@ h2 {
 .game {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
   transform-style: preserve-3d;
   perspective: 500px;
