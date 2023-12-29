@@ -1,9 +1,9 @@
-{
-  "extends": [
-    "development"
-  ],
-  "hints": {
-    "button-type": "off",
-    "leading-dot-classlist": "warning"
-  }
-}
+// {
+//   "extends": [
+//     "development"
+//   ],
+//   "hints": {
+//     "button-type": "true",
+//     "leading-dot-classlist": "warning"
+//   }
+// }
