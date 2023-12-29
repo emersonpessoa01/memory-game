@@ -1,0 +1,8 @@
+@media (max-width: 480px) {
+    .game {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 100%;
+    }
+  }
